@@ -1,0 +1,10 @@
+framework module EDControllers {
+  umbrella header "EDControllers.h"
+
+  export *
+  module * { export * }
+}
+
+module EDControllers.Swift {
+    header "EDControllers-Swift.h"
+}

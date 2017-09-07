@@ -1,0 +1,10 @@
+framework module EDProgressView {
+  umbrella header "EDProgressView.h"
+
+  export *
+  module * { export * }
+}
+
+module EDProgressView.Swift {
+    header "EDProgressView-Swift.h"
+}

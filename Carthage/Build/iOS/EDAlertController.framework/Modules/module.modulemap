@@ -1,0 +1,10 @@
+framework module EDAlertController {
+  umbrella header "EDAlertController.h"
+
+  export *
+  module * { export * }
+}
+
+module EDAlertController.Swift {
+    header "EDAlertController-Swift.h"
+}

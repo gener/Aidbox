@@ -1,0 +1,7 @@
+github "Alamofire/Alamofire" "4.5.1"
+github "jdg/MBProgressHUD" "1.0.0"
+github "jsonmodel/jsonmodel" "364f57ba9671af417b35762049d8aed482fcf075"
+github "ruedcode/EDAlertController" "0.3"
+github "ruedcode/EDControllers" "48b0a6c972486226164f85f41e4cbbc94161cd02"
+github "ruedcode/EDLocalizator" "0.2"
+github "ruedcode/EDProgressView" "0.3"

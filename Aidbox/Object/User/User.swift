@@ -7,7 +7,13 @@
 //
 
 import UIKit
+import JSONModel
 
-class User: NSObject {
+class User : JSONModel {
+
+	var userId: Int = 0
+	var email: String = ""
+	var patient: String = ""
+	
 
 }

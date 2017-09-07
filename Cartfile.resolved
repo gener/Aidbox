@@ -1,4 +1,5 @@
 github "Alamofire/Alamofire" "4.5.1"
+github "hackiftekhar/IQKeyboardManager" "v4.0.13"
 github "jdg/MBProgressHUD" "1.0.0"
 github "jsonmodel/jsonmodel" "364f57ba9671af417b35762049d8aed482fcf075"
 github "ruedcode/EDAlertController" "0.3"

@@ -1,3 +1,0 @@
-[submodule "Carthage/Checkouts/Swift-FHIR"]
-	path = Carthage/Checkouts/Swift-FHIR
-	url = https://github.com/smart-on-fhir/Swift-FHIR.git

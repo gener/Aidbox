@@ -9,18 +9,6 @@
 import UIKit
 import EDControllers
 
-extension URL {
-	public var queryItems: [String: String] {
-		var params = [String: String]()
-		return URLComponents(url: self, resolvingAgainstBaseURL: false)?
-			.queryItems?
-			.reduce([:], { (_, item) -> [String: String] in
-				params[item.name] = item.value
-				return params
-			}) ?? [:]
-	}
-}
-
 class ViewController: EDViewController, UIWebViewDelegate {
 
 	let controller = EDHTMLViewController()
@@ -51,27 +39,27 @@ class ViewController: EDViewController, UIWebViewDelegate {
 		// Dispose of any resources that can be recreated.
 	}
 
-	func getToken(by code: String) {
-		let string = "\(UserManager.instance.clientAuthorizeURI)?client_id=\(UserManager.instance.clientId)&scope=\(UserManager.instance.clientScope)&redirect_uri=\(UserManager.instance.clientRedirectURI)&grant_type=authorization_code&client_secret=\(UserManager.instance.clientSecret)&code=\(code)"
-		let request = URLRequest(url: URL(string: string)!)
-		controller.webView.loadRequest(request)
-	}
-
-	// MARK: - UIWebViewDelegate
-
-	func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-		if let url = request.url {
-			print("load URL \(url)")
-			if url.absoluteString.contains(UserManager.instance.clientRedirectURI), let code = url.queryItems["code"] {
-				print("URL = \(url.absoluteString)")
-				print("items \(url.queryItems)")
-				getToken(by: code)
-				return false
-			}
-		}
-		return true
-
-	}
+//	func getToken(by code: String) {
+//		let string = "\(UserManager.instance.clientAuthorizeURI)?client_id=\(UserManager.instance.clientId)&scope=\(UserManager.instance.clientScope)&redirect_uri=\(UserManager.instance.clientRedirectURI)&grant_type=authorization_code&client_secret=\(UserManager.instance.clientSecret)&code=\(code)"
+//		let request = URLRequest(url: URL(string: string)!)
+//		controller.webView.loadRequest(request)
+//	}
+//
+//	// MARK: - UIWebViewDelegate
+//
+//	func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+//		if let url = request.url {
+//			print("load URL \(url)")
+//			if url.absoluteString.contains(UserManager.instance.clientRedirectURI), let code = url.queryItems["code"] {
+//				print("URL = \(url.absoluteString)")
+//				print("items \(url.queryItems)")
+//				getToken(by: code)
+//				return false
+//			}
+//		}
+//		return true
+//
+//	}
 
 
 

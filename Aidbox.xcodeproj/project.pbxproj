@@ -26,8 +26,13 @@
 		A1E079B31F6162510045AA20 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079B21F6162510045AA20 /* User.swift */; };
 		A1E079B71F616CDA0045AA20 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E079B51F616CDA0045AA20 /* Alamofire.framework */; };
 		A1E079B81F616CDA0045AA20 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E079B51F616CDA0045AA20 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1E079B91F616CDA0045AA20 /* JSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E079B61F616CDA0045AA20 /* JSONModel.framework */; };
-		A1E079BA1F616CDA0045AA20 /* JSONModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E079B61F616CDA0045AA20 /* JSONModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E079BC1F6255EB0045AA20 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079BB1F6255EB0045AA20 /* LoginViewController.swift */; };
+		A1E079BE1F6258800045AA20 /* URLEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079BD1F6258800045AA20 /* URLEndpoint.swift */; };
+		A1E079C01F6260370045AA20 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E079BF1F6260370045AA20 /* IQKeyboardManagerSwift.framework */; };
+		A1E079C11F6260370045AA20 /* IQKeyboardManagerSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E079BF1F6260370045AA20 /* IQKeyboardManagerSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E079C31F626F610045AA20 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079C21F626F610045AA20 /* Token.swift */; };
+		A1E079C51F627FE70045AA20 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079C41F627FE70045AA20 /* BaseObject.swift */; };
+		A1E079C71F62838C0045AA20 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079C61F62838C0045AA20 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,9 +45,9 @@
 				A1E079921F613E590045AA20 /* EDLocalizator.framework in Embed Frameworks */,
 				A1E079B81F616CDA0045AA20 /* Alamofire.framework in Embed Frameworks */,
 				A1E079941F613E590045AA20 /* EDProgressView.framework in Embed Frameworks */,
-				A1E079BA1F616CDA0045AA20 /* JSONModel.framework in Embed Frameworks */,
 				A1E0798E1F613E590045AA20 /* EDAlertController.framework in Embed Frameworks */,
 				A1E079961F613E590045AA20 /* MBProgressHUD.framework in Embed Frameworks */,
+				A1E079C11F6260370045AA20 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
 				A1E079901F613E590045AA20 /* EDControllers.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -74,7 +79,12 @@
 		A1E079AC1F6157A80045AA20 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserManager.swift; path = Managers/UserManager.swift; sourceTree = "<group>"; };
 		A1E079B21F6162510045AA20 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Object/User/User.swift; sourceTree = "<group>"; };
 		A1E079B51F616CDA0045AA20 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		A1E079B61F616CDA0045AA20 /* JSONModel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JSONModel.framework; path = Carthage/Build/iOS/JSONModel.framework; sourceTree = "<group>"; };
+		A1E079BB1F6255EB0045AA20 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
+		A1E079BD1F6258800045AA20 /* URLEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = URLEndpoint.swift; path = Object/URLEndpoint.swift; sourceTree = "<group>"; };
+		A1E079BF1F6260370045AA20 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
+		A1E079C21F626F610045AA20 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Token.swift; path = Object/User/Token.swift; sourceTree = "<group>"; };
+		A1E079C41F627FE70045AA20 /* BaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseObject.swift; path = Object/BaseObject.swift; sourceTree = "<group>"; };
+		A1E079C61F62838C0045AA20 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebService.swift; path = Managers/WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +95,9 @@
 				A1E0798D1F613E590045AA20 /* EDAlertController.framework in Frameworks */,
 				A1E079B71F616CDA0045AA20 /* Alamofire.framework in Frameworks */,
 				A1E0798F1F613E590045AA20 /* EDControllers.framework in Frameworks */,
-				A1E079B91F616CDA0045AA20 /* JSONModel.framework in Frameworks */,
 				A1E079911F613E590045AA20 /* EDLocalizator.framework in Frameworks */,
 				A1E079931F613E590045AA20 /* EDProgressView.framework in Frameworks */,
+				A1E079C01F6260370045AA20 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				A1E079951F613E590045AA20 /* MBProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				A16330DB1F5FCE2000D4DD27 /* ViewController.swift */,
+				A1E079BB1F6255EB0045AA20 /* LoginViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -106,8 +117,8 @@
 		A16330CD1F5FCE2000D4DD27 = {
 			isa = PBXGroup;
 			children = (
+				A1E079BF1F6260370045AA20 /* IQKeyboardManagerSwift.framework */,
 				A1E079B51F616CDA0045AA20 /* Alamofire.framework */,
-				A1E079B61F616CDA0045AA20 /* JSONModel.framework */,
 				A1E079861F613E590045AA20 /* EDAlertController.framework */,
 				A1E079871F613E590045AA20 /* EDControllers.framework */,
 				A1E079881F613E590045AA20 /* EDLocalizator.framework */,
@@ -161,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				A1E079AC1F6157A80045AA20 /* UserManager.swift */,
+				A1E079C61F62838C0045AA20 /* WebService.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -169,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				A1E079B41F6162540045AA20 /* User */,
+				A1E079BD1F6258800045AA20 /* URLEndpoint.swift */,
+				A1E079C41F627FE70045AA20 /* BaseObject.swift */,
 			);
 			name = Object;
 			sourceTree = "<group>";
@@ -177,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				A1E079B21F6162510045AA20 /* User.swift */,
+				A1E079C21F626F610045AA20 /* Token.swift */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -272,7 +287,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/EDProgressView.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/EDControllers.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/JSONModel.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManagerSwift.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MBProgressHUD.framework",
@@ -281,7 +296,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/EDProgressView.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/EDControllers.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/JSONModel.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/IQKeyboardManagerSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -294,9 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E079C71F62838C0045AA20 /* WebService.swift in Sources */,
 				A1E079B31F6162510045AA20 /* User.swift in Sources */,
+				A1E079C31F626F610045AA20 /* Token.swift in Sources */,
 				A1E079AD1F6157A80045AA20 /* UserManager.swift in Sources */,
 				A16330DC1F5FCE2000D4DD27 /* ViewController.swift in Sources */,
+				A1E079BC1F6255EB0045AA20 /* LoginViewController.swift in Sources */,
+				A1E079C51F627FE70045AA20 /* BaseObject.swift in Sources */,
+				A1E079BE1F6258800045AA20 /* URLEndpoint.swift in Sources */,
 				A16330DA1F5FCE2000D4DD27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,10 +31,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="28X-8x-kNU">
             <objects>
-                <viewController id="R7Y-pe-ywI" sceneMemberID="viewController">
+                <viewController id="R7Y-pe-ywI" customClass="LoginViewController" customModule="Aidbox" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lqs-aZ-teA"/>
                         <viewControllerLayoutGuide type="bottom" id="Zah-Hr-psc"/>
@@ -78,6 +78,9 @@
                                                 <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginAction:" destination="R7Y-pe-ywI" eventType="touchUpInside" id="Csu-Hb-g15"/>
+                                        </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ldM-Tw-2yt">
                                         <rect key="frame" x="44.5" y="0.0" width="206.5" height="50"/>
@@ -121,6 +124,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="u0c-ef-bfe"/>
+                    <connections>
+                        <outlet property="emailField" destination="dU0-pA-ueL" id="tNp-zT-Pmb"/>
+                        <outlet property="loginButton" destination="P67-f6-4Uq" id="nhc-Ay-pl5"/>
+                        <outlet property="passwordField" destination="GY2-nE-gNo" id="Dpr-Ca-lI4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twi-hw-fl4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

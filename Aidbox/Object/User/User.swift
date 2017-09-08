@@ -7,13 +7,24 @@
 //
 
 import UIKit
-import JSONModel
 
-class User : JSONModel {
+class User : BaseObject {
 
 	var userId: Int = 0
 	var email: String = ""
-	var patient: String = ""
+	var patientId: String = ""
+
+	override func updateFrom(dict: [AnyHashable : Any]) {
+		if let id = dict["id"] as? Int {
+			userId = id
+		}
+		if let email = dict["email"] as? String {
+			self.email = email
+		}
+		if let data = dict["data"] as? [AnyHashable : Any], let patientId = data["patient_id"] as? String {
+			self.patientId = patientId
+		}
+	}
 	
 
 }

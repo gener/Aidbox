@@ -2,6 +2,4 @@ github "ruedcode/EDControllers" "dev"
 
 github "Alamofire/Alamofire" ~> 4.5
 
-github "jsonmodel/jsonmodel" "master"
-
 github "hackiftekhar/IQKeyboardManager"

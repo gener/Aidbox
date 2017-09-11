@@ -20,9 +20,12 @@ class Token: BaseObject {
 		if let refreshToken = dict["refresh_token"] as? String {
 			self.refreshToken = refreshToken
 		}
-//		if let accessToken = dict["access_token"] as? String {
-//			self.accessToken = accessToken
-//		}
+		if let rawDate = dict["expires_at"] as? String {
+			do {
+				expireAt = try Date(dateString: rawDate)
+			}
+			catch {}
+		}
 	}
 
 

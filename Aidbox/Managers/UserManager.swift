@@ -69,6 +69,13 @@ class UserManager {
 		}
 	}
 
+	func logout() {
+		user = User(from: [:])
+		token = Token(from: [:])
+		WebService.instance.setToken(accessToken: nil)
+		NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: "userDidLogout")))
+	}
+
 	private func requestAuthToken(code: String, result:@escaping ((Error?, User?) -> Void)) {
 		let params = [
 			"client_id": clientId,

@@ -11,10 +11,19 @@ import EDControllers
 
 class ViewController: EDViewController, UIWebViewDelegate {
 
-	let controller = EDHTMLViewController()
+	lazy var loginController : UIViewController = {
+		return self.storyboard!.instantiateViewController(withIdentifier: "loginViewController")
+	}()
+
+	lazy var homeController : UINavigationController = {
+		return self.storyboard!.instantiateViewController(withIdentifier: "homeNavigationController") as! UINavigationController
+	}()
+	
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
+		NotificationCenter.default.addObserver(self, selector: #selector(userDidLogout), name: Notification.Name(rawValue: "userDidLogout"), object: nil)
 	}
 
 	override func viewDidAppear(_ animated: Bool) {
@@ -23,20 +32,18 @@ class ViewController: EDViewController, UIWebViewDelegate {
 		if !UserManager.instance.isLoggedIn {
 			performSegue(withIdentifier: "performLogin", sender: nil)
 		}
-
-//		let string = "\(UserManager.instance.clientTokenURI)?client_id=\(UserManager.instance.clientId)&scope=\(UserManager.instance.clientScope)&redirect_uri=\(UserManager.instance.clientRedirectURI)"
-//		let request = URLRequest(url: URL(string: string)!)
-//
-//
-//		present(controller, animated: true) { [unowned self] in
-//			self.controller.webView.loadRequest(request)
-//			self.controller.webView.delegate = self
-//		}
+		else {
+			performSegue(withIdentifier: "performInfo", sender: nil)
+		}
 	}
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
+	}
+
+	func userDidLogout() {
+		homeController.dismiss(animated: true, completion: nil)
 	}
 
 //	func getToken(by code: String) {

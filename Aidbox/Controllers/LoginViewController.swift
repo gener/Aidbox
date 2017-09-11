@@ -18,6 +18,8 @@ class LoginViewController: EDViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+		emailField.text = "test@mail.com"
+		passwordField.text = "123qwe"
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,8 +36,9 @@ class LoginViewController: EDViewController {
 					self.alertWithType(type: .error, message: "Problem with authorization")
 				}
 				else {
-					print("user \(user?.patientId)")
-					print("\(self.presentedViewController) \(self.presentingViewController) \(self.navigationController)")
+					self.backAction()
+//					print("user \(String(describing: user?.patientId))")
+//					print("\(String(describing: self.presentedViewController)) \(String(describing: self.presentingViewController)) \(String(describing: self.navigationController))")
 				}
 
 

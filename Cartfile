@@ -3,3 +3,7 @@ github "ruedcode/EDControllers" "dev"
 github "Alamofire/Alamofire" ~> 4.5
 
 github "hackiftekhar/IQKeyboardManager"
+
+github "SyncDB/DateParser"
+
+github "jonkykong/SideMenu" "master"

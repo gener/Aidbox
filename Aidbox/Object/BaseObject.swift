@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DateParser
 
 protocol BaseObjectProtocol {
 	init(from dict:[AnyHashable : Any])

@@ -1,6 +1,8 @@
 github "Alamofire/Alamofire" "4.5.1"
+github "SyncDB/DateParser" "1.1.0"
 github "hackiftekhar/IQKeyboardManager" "v4.0.13"
 github "jdg/MBProgressHUD" "1.0.0"
+github "jonkykong/SideMenu" "6b9607fc9a3d95f43d2e38b8563c79c3bb839041"
 github "ruedcode/EDAlertController" "0.3"
 github "ruedcode/EDControllers" "09fc5dfc8a8f2e2f57e4683f1dea2e1138eadd11"
 github "ruedcode/EDLocalizator" "0.2"

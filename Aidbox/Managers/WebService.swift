@@ -26,9 +26,15 @@ class WebService {
 
 	var manager = Alamofire.SessionManager()
 
-	func setToken(accessToken : String) {
+	func setToken(accessToken : String?) {
 		var defaultHeaders = Alamofire.SessionManager.defaultHTTPHeaders
-		defaultHeaders["Authorization"] = "Bearer \(accessToken)"
+		if accessToken != nil {
+			defaultHeaders["Authorization"] = "Bearer \(accessToken!)"
+		}
+		else {
+			defaultHeaders.removeValue(forKey: "Authorization")
+		}
+
 
 		let configuration = URLSessionConfiguration.default
 		configuration.httpAdditionalHeaders = defaultHeaders

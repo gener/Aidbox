@@ -33,6 +33,16 @@
 		A1E079C31F626F610045AA20 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079C21F626F610045AA20 /* Token.swift */; };
 		A1E079C51F627FE70045AA20 /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079C41F627FE70045AA20 /* BaseObject.swift */; };
 		A1E079C71F62838C0045AA20 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079C61F62838C0045AA20 /* WebService.swift */; };
+		A1E079C91F664B9A0045AA20 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079C81F664B9A0045AA20 /* Group.swift */; };
+		A1E079CC1F6657070045AA20 /* DateParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E079CA1F6657070045AA20 /* DateParser.framework */; };
+		A1E079CD1F6657070045AA20 /* DateParser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E079CA1F6657070045AA20 /* DateParser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E079CE1F6657070045AA20 /* SideMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E079CB1F6657070045AA20 /* SideMenu.framework */; };
+		A1E079CF1F6657070045AA20 /* SideMenu.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1E079CB1F6657070045AA20 /* SideMenu.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E079D21F6661BD0045AA20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079D11F6661BD0045AA20 /* HomeViewController.swift */; };
+		A1E079D41F6663B70045AA20 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079D31F6663B70045AA20 /* MenuViewController.swift */; };
+		A1E079D61F6684D70045AA20 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079D51F6684D70045AA20 /* Patient.swift */; };
+		A1E079D91F6686600045AA20 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079D81F6686600045AA20 /* Address.swift */; };
+		A1E079DB1F66874F0045AA20 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079DA1F66874F0045AA20 /* Period.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,9 +52,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A1E079CF1F6657070045AA20 /* SideMenu.framework in Embed Frameworks */,
 				A1E079921F613E590045AA20 /* EDLocalizator.framework in Embed Frameworks */,
 				A1E079B81F616CDA0045AA20 /* Alamofire.framework in Embed Frameworks */,
 				A1E079941F613E590045AA20 /* EDProgressView.framework in Embed Frameworks */,
+				A1E079CD1F6657070045AA20 /* DateParser.framework in Embed Frameworks */,
 				A1E0798E1F613E590045AA20 /* EDAlertController.framework in Embed Frameworks */,
 				A1E079961F613E590045AA20 /* MBProgressHUD.framework in Embed Frameworks */,
 				A1E079C11F6260370045AA20 /* IQKeyboardManagerSwift.framework in Embed Frameworks */,
@@ -85,6 +97,14 @@
 		A1E079C21F626F610045AA20 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Token.swift; path = Object/User/Token.swift; sourceTree = "<group>"; };
 		A1E079C41F627FE70045AA20 /* BaseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseObject.swift; path = Object/BaseObject.swift; sourceTree = "<group>"; };
 		A1E079C61F62838C0045AA20 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebService.swift; path = Managers/WebService.swift; sourceTree = "<group>"; };
+		A1E079C81F664B9A0045AA20 /* Group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Group.swift; path = Object/User/Group.swift; sourceTree = "<group>"; };
+		A1E079CA1F6657070045AA20 /* DateParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DateParser.framework; path = Carthage/Build/iOS/DateParser.framework; sourceTree = "<group>"; };
+		A1E079CB1F6657070045AA20 /* SideMenu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SideMenu.framework; path = Carthage/Build/iOS/SideMenu.framework; sourceTree = "<group>"; };
+		A1E079D11F6661BD0045AA20 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Controllers/HomeViewController.swift; sourceTree = "<group>"; };
+		A1E079D31F6663B70045AA20 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Controllers/MenuViewController.swift; sourceTree = "<group>"; };
+		A1E079D51F6684D70045AA20 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Patient.swift; path = Object/Patient.swift; sourceTree = "<group>"; };
+		A1E079D81F6686600045AA20 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = Object/FHIR/Address.swift; sourceTree = "<group>"; };
+		A1E079DA1F66874F0045AA20 /* Period.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Period.swift; path = Object/FHIR/Period.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +112,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E079CE1F6657070045AA20 /* SideMenu.framework in Frameworks */,
 				A1E0798D1F613E590045AA20 /* EDAlertController.framework in Frameworks */,
 				A1E079B71F616CDA0045AA20 /* Alamofire.framework in Frameworks */,
 				A1E0798F1F613E590045AA20 /* EDControllers.framework in Frameworks */,
+				A1E079CC1F6657070045AA20 /* DateParser.framework in Frameworks */,
 				A1E079911F613E590045AA20 /* EDLocalizator.framework in Frameworks */,
 				A1E079931F613E590045AA20 /* EDProgressView.framework in Frameworks */,
 				A1E079C01F6260370045AA20 /* IQKeyboardManagerSwift.framework in Frameworks */,
@@ -110,6 +132,8 @@
 			children = (
 				A16330DB1F5FCE2000D4DD27 /* ViewController.swift */,
 				A1E079BB1F6255EB0045AA20 /* LoginViewController.swift */,
+				A1E079D11F6661BD0045AA20 /* HomeViewController.swift */,
+				A1E079D31F6663B70045AA20 /* MenuViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -117,6 +141,9 @@
 		A16330CD1F5FCE2000D4DD27 = {
 			isa = PBXGroup;
 			children = (
+				A16330D81F5FCE2000D4DD27 /* Aidbox */,
+				A1E079CA1F6657070045AA20 /* DateParser.framework */,
+				A1E079CB1F6657070045AA20 /* SideMenu.framework */,
 				A1E079BF1F6260370045AA20 /* IQKeyboardManagerSwift.framework */,
 				A1E079B51F616CDA0045AA20 /* Alamofire.framework */,
 				A1E079861F613E590045AA20 /* EDAlertController.framework */,
@@ -124,7 +151,6 @@
 				A1E079881F613E590045AA20 /* EDLocalizator.framework */,
 				A1E079891F613E590045AA20 /* EDProgressView.framework */,
 				A1E0798A1F613E590045AA20 /* MBProgressHUD.framework */,
-				A16330D81F5FCE2000D4DD27 /* Aidbox */,
 				A16330D71F5FCE2000D4DD27 /* Products */,
 				A1E079851F613E550045AA20 /* Frameworks */,
 			);
@@ -180,6 +206,7 @@
 		A1E079B11F6162410045AA20 /* Object */ = {
 			isa = PBXGroup;
 			children = (
+				A1E079D71F6686440045AA20 /* FHIR */,
 				A1E079B41F6162540045AA20 /* User */,
 				A1E079BD1F6258800045AA20 /* URLEndpoint.swift */,
 				A1E079C41F627FE70045AA20 /* BaseObject.swift */,
@@ -192,8 +219,19 @@
 			children = (
 				A1E079B21F6162510045AA20 /* User.swift */,
 				A1E079C21F626F610045AA20 /* Token.swift */,
+				A1E079C81F664B9A0045AA20 /* Group.swift */,
 			);
 			name = User;
+			sourceTree = "<group>";
+		};
+		A1E079D71F6686440045AA20 /* FHIR */ = {
+			isa = PBXGroup;
+			children = (
+				A1E079D51F6684D70045AA20 /* Patient.swift */,
+				A1E079D81F6686600045AA20 /* Address.swift */,
+				A1E079DA1F66874F0045AA20 /* Period.swift */,
+			);
+			name = FHIR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +269,7 @@
 					A16330D51F5FCE2000D4DD27 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8WX23BUD23;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 0;
@@ -288,6 +326,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/EDControllers.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManagerSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SideMenu.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/DateParser.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MBProgressHUD.framework",
@@ -297,6 +337,8 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/EDControllers.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/IQKeyboardManagerSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SideMenu.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/DateParser.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -312,9 +354,15 @@
 				A1E079C71F62838C0045AA20 /* WebService.swift in Sources */,
 				A1E079B31F6162510045AA20 /* User.swift in Sources */,
 				A1E079C31F626F610045AA20 /* Token.swift in Sources */,
+				A1E079D61F6684D70045AA20 /* Patient.swift in Sources */,
+				A1E079C91F664B9A0045AA20 /* Group.swift in Sources */,
 				A1E079AD1F6157A80045AA20 /* UserManager.swift in Sources */,
+				A1E079D91F6686600045AA20 /* Address.swift in Sources */,
 				A16330DC1F5FCE2000D4DD27 /* ViewController.swift in Sources */,
 				A1E079BC1F6255EB0045AA20 /* LoginViewController.swift in Sources */,
+				A1E079D41F6663B70045AA20 /* MenuViewController.swift in Sources */,
+				A1E079DB1F66874F0045AA20 /* Period.swift in Sources */,
+				A1E079D21F6661BD0045AA20 /* HomeViewController.swift in Sources */,
 				A1E079C51F627FE70045AA20 /* BaseObject.swift in Sources */,
 				A1E079BE1F6258800045AA20 /* URLEndpoint.swift in Sources */,
 				A16330DA1F5FCE2000D4DD27 /* AppDelegate.swift in Sources */,
@@ -443,7 +491,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Aidbox/Aidbox.entitlements;
-				DEVELOPMENT_TEAM = 8WX23BUD23;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -452,8 +501,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.waveaccess.Aidbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0a2c8897-a3b3-4194-bdc9-a619c5e4aa2a";
-				PROVISIONING_PROFILE_SPECIFIER = "Aidbox Development";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -463,7 +512,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Aidbox/Aidbox.entitlements;
-				DEVELOPMENT_TEAM = 8WX23BUD23;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -472,8 +522,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.waveaccess.Aidbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "0a2c8897-a3b3-4194-bdc9-a619c5e4aa2a";
-				PROVISIONING_PROFILE_SPECIFIER = "Aidbox Development";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

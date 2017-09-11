@@ -25,10 +25,60 @@ class Address: BaseObject {
 
 	var use: AddressUse
 	var type: AddressType
-	var city: String?
+	var text: String?
 	var line: [String] = []
-	var period: Period?
-	var country: String?
-	var postalCode: String?
+	var city: String?
 	var district: String?
+	var state: String?
+	var postalCode: String?
+	var country: String?
+	var period: Period?
+
+	required init(from dict: [AnyHashable : Any]) {
+		self.use = .temp
+		if let rawUse = dict["use"] as? String, let use = AddressUse(rawValue: rawUse) {
+			self.use = use
+		}
+
+		self.type = .postal
+		if let rawType = dict["type"] as? String, let type = AddressType(rawValue: rawType) {
+			self.type = type
+		}
+
+		if let text = dict["text"] as? String {
+			self.text = text
+		}
+
+		if let lines = dict["line"] as? [String] {
+			for line in lines  {
+				self.line.append(line)
+			}
+		}
+
+		if let city = dict["city"] as? String {
+			self.city = city
+		}
+
+		if let district = dict["district"] as? String {
+			self.district = district
+		}
+
+		if let state = dict["state"] as? String {
+			self.state = state
+		}
+
+		if let postalCode = dict["postalCode"] as? String {
+			self.postalCode = postalCode
+		}
+
+		if let country = dict["country"] as? String {
+			self.country = country
+		}
+
+		if let periodDict = dict["period"] as? [AnyHashable : Any] {
+			self.period = Period(from: periodDict)
+		}
+
+		super.init(from: dict)
+	}
 }

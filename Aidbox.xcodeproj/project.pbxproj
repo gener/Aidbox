@@ -43,6 +43,8 @@
 		A1E079D61F6684D70045AA20 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079D51F6684D70045AA20 /* Patient.swift */; };
 		A1E079D91F6686600045AA20 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079D81F6686600045AA20 /* Address.swift */; };
 		A1E079DB1F66874F0045AA20 /* Period.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079DA1F66874F0045AA20 /* Period.swift */; };
+		A1E079DD1F66BE4A0045AA20 /* HumanName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079DC1F66BE4A0045AA20 /* HumanName.swift */; };
+		A1E079DF1F66BFA60045AA20 /* ContactPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E079DE1F66BFA60045AA20 /* ContactPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -105,6 +107,8 @@
 		A1E079D51F6684D70045AA20 /* Patient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Patient.swift; path = Object/Patient.swift; sourceTree = "<group>"; };
 		A1E079D81F6686600045AA20 /* Address.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Address.swift; path = Object/FHIR/Address.swift; sourceTree = "<group>"; };
 		A1E079DA1F66874F0045AA20 /* Period.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Period.swift; path = Object/FHIR/Period.swift; sourceTree = "<group>"; };
+		A1E079DC1F66BE4A0045AA20 /* HumanName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HumanName.swift; path = Object/FHIR/HumanName.swift; sourceTree = "<group>"; };
+		A1E079DE1F66BFA60045AA20 /* ContactPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactPoint.swift; path = Object/FHIR/ContactPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,8 @@
 				A1E079D51F6684D70045AA20 /* Patient.swift */,
 				A1E079D81F6686600045AA20 /* Address.swift */,
 				A1E079DA1F66874F0045AA20 /* Period.swift */,
+				A1E079DC1F66BE4A0045AA20 /* HumanName.swift */,
+				A1E079DE1F66BFA60045AA20 /* ContactPoint.swift */,
 			);
 			name = FHIR;
 			sourceTree = "<group>";
@@ -355,6 +361,8 @@
 				A1E079B31F6162510045AA20 /* User.swift in Sources */,
 				A1E079C31F626F610045AA20 /* Token.swift in Sources */,
 				A1E079D61F6684D70045AA20 /* Patient.swift in Sources */,
+				A1E079DD1F66BE4A0045AA20 /* HumanName.swift in Sources */,
+				A1E079DF1F66BFA60045AA20 /* ContactPoint.swift in Sources */,
 				A1E079C91F664B9A0045AA20 /* Group.swift in Sources */,
 				A1E079AD1F6157A80045AA20 /* UserManager.swift in Sources */,
 				A1E079D91F6686600045AA20 /* Address.swift in Sources */,

@@ -14,9 +14,10 @@ class User : BaseObject {
 	var email: String = ""
 	var patientId: String = ""
 	var groups : [Group] = []
+	var patient: Patient = Patient(from: [:])
 
 	override func updateFrom(dict: [AnyHashable : Any]) {
-		print("user \(dict)")
+
 		if let id = dict["id"] as? Int {
 			userId = id
 		}

@@ -7,17 +7,25 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class MenuViewController: UITableViewController {
 
 	@IBOutlet weak var patientName: UILabel!
+	@IBOutlet weak var avatarView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		patientName.text = UserManager.instance.user.email
+		patientName.text = UserManager.instance.user.patient.displayName
+		if let image = UserManager.instance.user.patient.photo.first, let url = image.url {
+			avatarView.af_setImage(withURL: url)
+		}
+
 
 		tableView.tableFooterView = UIView()
+
+//		print("patient \(UserManager.instance.user.patient.displayName)")
 
     }
 

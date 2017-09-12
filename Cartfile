@@ -1,9 +1,14 @@
 github "ruedcode/EDControllers" "dev"
 
+github "ruedcode/EDDateHelper" "master"
+
 github "Alamofire/Alamofire" ~> 4.5
+
+github "Alamofire/AlamofireImage" ~> 3.3
 
 github "hackiftekhar/IQKeyboardManager"
 
 github "SyncDB/DateParser"
 
 github "jonkykong/SideMenu" "master"
+

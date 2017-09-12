@@ -22,11 +22,25 @@ class HumanName: BaseObject {
 
 	var use: NameUse
 	var text : String?
-	var family : String?
-	var given : String?
+	var family : [String] = []
+	var given : [String] = []
 	var prefix : String?
 	var suffix : String?
 	var period : Period?
+
+	var display : String {
+		get {
+			var family = ""
+			var name = ""
+			if let lastFamily = self.family.last {
+				family = lastFamily
+			}
+			if let text = self.text {
+				name = text
+			}
+			return "\(name) \(family)"
+		}
+	}
 
 	required init(from dict: [AnyHashable : Any]) {
 		self.use = .temp
@@ -38,11 +52,11 @@ class HumanName: BaseObject {
 			self.text = text
 		}
 
-		if let family = dict["family"] as? String {
+		if let family = dict["family"] as? [String] {
 			self.family = family
 		}
 
-		if let given = dict["given"] as? String {
+		if let given = dict["given"] as? [String] {
 			self.given = given
 		}
 
@@ -59,4 +73,6 @@ class HumanName: BaseObject {
 		}
 		super.init(from: dict)
 	}
+
+
 }

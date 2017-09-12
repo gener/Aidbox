@@ -27,7 +27,11 @@ struct URLEndpoint: URLConvertible {
 struct Endpoint {
 	static let oauthCode = URLEndpoint("oauth/authorize")
 	static let oauthToken = URLEndpoint("oauth/token")
-	static let curretnUser = URLEndpoint("user")
+	static let currentUser = URLEndpoint("user")
+
+	static func patient(id: String) -> URLEndpoint {
+		return URLEndpoint("fhir/Patient/\(id)")
+	}
 
 }
 

@@ -102,16 +102,32 @@ class UserManager {
 
 
 	private func requestUserInfo(result:@escaping ((Error?, User?) -> Void)) {
-		WebService.instance.manager.request(Endpoint.curretnUser, method:.get).responseJSON(completionHandler: {[unowned self] (response) in
+		WebService.instance.manager.request(Endpoint.currentUser, method:.get).responseJSON(completionHandler: {[unowned self] (response) in
 			if let error = response.error {
 				result(error, nil)
 			}
 			if let dict = response.result.value as? [AnyHashable : Any] {
 				self.user = User(from: dict)
-				result(response.error, self.user)
+				self.requestPatient(self.user.patientId, result: result)
 			}
 			else {
 				let err = NSError(domain: "user", code: -1, userInfo: [:])
+				result(err, nil)
+			}
+		})
+	}
+
+	private func requestPatient(_ patientId: String, result:@escaping ((Error?, User?) -> Void)) {
+		WebService.instance.manager.request(Endpoint.patient(id: patientId), method:.get).responseJSON(completionHandler: {[unowned self] (response) in
+			if let error = response.error {
+				result(error, nil)
+			}
+			if let dict = response.result.value as? [AnyHashable : Any] {
+				self.user.patient = Patient(from: dict)
+				result(response.error, self.user)
+			}
+			else {
+				let err = NSError(domain: "user", code: -2, userInfo: [:])
 				result(err, nil)
 			}
 		})

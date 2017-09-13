@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		A113385E1F67E75A007EAA53 /* EDDateHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A113385D1F67E75A007EAA53 /* EDDateHelper.framework */; };
 		A113385F1F67E75A007EAA53 /* EDDateHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A113385D1F67E75A007EAA53 /* EDDateHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A11338611F68F6E5007EAA53 /* MedicationDispense.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11338601F68F6E5007EAA53 /* MedicationDispense.swift */; };
+		A11338631F68F700007EAA53 /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11338621F68F700007EAA53 /* Identifier.swift */; };
+		A11338671F68F85A007EAA53 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11338661F68F85A007EAA53 /* Organization.swift */; };
+		A11338691F68FB3C007EAA53 /* Quantity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11338681F68FB3C007EAA53 /* Quantity.swift */; };
+		A113386D1F68FCB4007EAA53 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A113386C1F68FCB4007EAA53 /* Annotation.swift */; };
+		A113386F1F68FD24007EAA53 /* Dosage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A113386E1F68FD24007EAA53 /* Dosage.swift */; };
+		A11338711F68FDAB007EAA53 /* Ratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11338701F68FDAB007EAA53 /* Ratio.swift */; };
+		A11338731F6901A1007EAA53 /* DiagnosticReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11338721F6901A1007EAA53 /* DiagnosticReport.swift */; };
 		A16330DA1F5FCE2000D4DD27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16330D91F5FCE2000D4DD27 /* AppDelegate.swift */; };
 		A16330DC1F5FCE2000D4DD27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16330DB1F5FCE2000D4DD27 /* ViewController.swift */; };
 		A16330DF1F5FCE2000D4DD27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16330DD1F5FCE2000D4DD27 /* Main.storyboard */; };
@@ -82,6 +90,14 @@
 
 /* Begin PBXFileReference section */
 		A113385D1F67E75A007EAA53 /* EDDateHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EDDateHelper.framework; path = Carthage/Build/iOS/EDDateHelper.framework; sourceTree = "<group>"; };
+		A11338601F68F6E5007EAA53 /* MedicationDispense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedicationDispense.swift; path = Object/FHIR/MedicationDispense.swift; sourceTree = "<group>"; };
+		A11338621F68F700007EAA53 /* Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Identifier.swift; path = Object/FHIR/Identifier.swift; sourceTree = "<group>"; };
+		A11338661F68F85A007EAA53 /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Organization.swift; path = Object/FHIR/Organization.swift; sourceTree = "<group>"; };
+		A11338681F68FB3C007EAA53 /* Quantity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Quantity.swift; path = Object/FHIR/Quantity.swift; sourceTree = "<group>"; };
+		A113386C1F68FCB4007EAA53 /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Annotation.swift; path = Object/FHIR/Annotation.swift; sourceTree = "<group>"; };
+		A113386E1F68FD24007EAA53 /* Dosage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dosage.swift; path = Object/FHIR/Dosage.swift; sourceTree = "<group>"; };
+		A11338701F68FDAB007EAA53 /* Ratio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ratio.swift; path = Object/FHIR/Ratio.swift; sourceTree = "<group>"; };
+		A11338721F6901A1007EAA53 /* DiagnosticReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagnosticReport.swift; path = Object/FHIR/DiagnosticReport.swift; sourceTree = "<group>"; };
 		A16330D61F5FCE2000D4DD27 /* Aidbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aidbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16330D91F5FCE2000D4DD27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16330DB1F5FCE2000D4DD27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -255,6 +271,7 @@
 		A1E079D71F6686440045AA20 /* FHIR */ = {
 			isa = PBXGroup;
 			children = (
+				A113386C1F68FCB4007EAA53 /* Annotation.swift */,
 				A1E079D51F6684D70045AA20 /* Patient.swift */,
 				A1E079D81F6686600045AA20 /* Address.swift */,
 				A1E079DA1F66874F0045AA20 /* Period.swift */,
@@ -263,6 +280,13 @@
 				A1E079E01F679CEE0045AA20 /* Coding.swift */,
 				A1E079E21F679E040045AA20 /* CodeableConcept.swift */,
 				A1E079E41F679F7D0045AA20 /* Attachment.swift */,
+				A11338601F68F6E5007EAA53 /* MedicationDispense.swift */,
+				A11338621F68F700007EAA53 /* Identifier.swift */,
+				A11338661F68F85A007EAA53 /* Organization.swift */,
+				A11338681F68FB3C007EAA53 /* Quantity.swift */,
+				A113386E1F68FD24007EAA53 /* Dosage.swift */,
+				A11338701F68FDAB007EAA53 /* Ratio.swift */,
+				A11338721F6901A1007EAA53 /* DiagnosticReport.swift */,
 			);
 			name = FHIR;
 			sourceTree = "<group>";
@@ -406,11 +430,14 @@
 			files = (
 				A1E079C71F62838C0045AA20 /* WebService.swift in Sources */,
 				A1E079B31F6162510045AA20 /* User.swift in Sources */,
+				A11338671F68F85A007EAA53 /* Organization.swift in Sources */,
 				A1E079E31F679E040045AA20 /* CodeableConcept.swift in Sources */,
 				A1E079EE1F67DAB70045AA20 /* ImageTableViewCell.swift in Sources */,
 				A1E079C31F626F610045AA20 /* Token.swift in Sources */,
+				A113386F1F68FD24007EAA53 /* Dosage.swift in Sources */,
 				A1E079E51F679F7D0045AA20 /* Attachment.swift in Sources */,
 				A1E079E11F679CEE0045AA20 /* Coding.swift in Sources */,
+				A11338711F68FDAB007EAA53 /* Ratio.swift in Sources */,
 				A1E079D61F6684D70045AA20 /* Patient.swift in Sources */,
 				A1E079DD1F66BE4A0045AA20 /* HumanName.swift in Sources */,
 				A1E079EA1F67D8200045AA20 /* PatientViewController.swift in Sources */,
@@ -419,12 +446,17 @@
 				A1E079AD1F6157A80045AA20 /* UserManager.swift in Sources */,
 				A1E079D91F6686600045AA20 /* Address.swift in Sources */,
 				A16330DC1F5FCE2000D4DD27 /* ViewController.swift in Sources */,
+				A11338731F6901A1007EAA53 /* DiagnosticReport.swift in Sources */,
+				A11338691F68FB3C007EAA53 /* Quantity.swift in Sources */,
+				A11338611F68F6E5007EAA53 /* MedicationDispense.swift in Sources */,
 				A1E079BC1F6255EB0045AA20 /* LoginViewController.swift in Sources */,
 				A1E079D41F6663B70045AA20 /* MenuViewController.swift in Sources */,
 				A1E079DB1F66874F0045AA20 /* Period.swift in Sources */,
 				A1E079D21F6661BD0045AA20 /* HomeViewController.swift in Sources */,
 				A1E079C51F627FE70045AA20 /* BaseObject.swift in Sources */,
 				A1E079BE1F6258800045AA20 /* URLEndpoint.swift in Sources */,
+				A11338631F68F700007EAA53 /* Identifier.swift in Sources */,
+				A113386D1F68FCB4007EAA53 /* Annotation.swift in Sources */,
 				A16330DA1F5FCE2000D4DD27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

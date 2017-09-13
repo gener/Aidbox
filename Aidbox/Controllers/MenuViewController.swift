@@ -17,7 +17,7 @@ class MenuViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		patientName.text = UserManager.instance.user.patient.displayName
+		patientName.text = UserManager.instance.user.patient.string
 		if let image = UserManager.instance.user.patient.photo.first, let url = image.url {
 			avatarView.af_setImage(withURL: url)
 		}

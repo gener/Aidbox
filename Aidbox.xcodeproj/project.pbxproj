@@ -166,10 +166,10 @@
 		A16330CD1F5FCE2000D4DD27 = {
 			isa = PBXGroup;
 			children = (
-				A113385D1F67E75A007EAA53 /* EDDateHelper.framework */,
 				A16330D81F5FCE2000D4DD27 /* Aidbox */,
 				A1E079CA1F6657070045AA20 /* DateParser.framework */,
 				A1E079CB1F6657070045AA20 /* SideMenu.framework */,
+				A113385D1F67E75A007EAA53 /* EDDateHelper.framework */,
 				A1E079BF1F6260370045AA20 /* IQKeyboardManagerSwift.framework */,
 				A1E079B51F616CDA0045AA20 /* Alamofire.framework */,
 				A1E079861F613E590045AA20 /* EDAlertController.framework */,

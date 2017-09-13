@@ -22,7 +22,7 @@ class PatientViewController: EDTableViewController {
 			patient = UserManager.instance.user.patient
 		}
 
-		title = patient?.displayName
+		title = patient?.string
 		tableView.tableFooterView = UIView()
 		tableView.rowHeight = UITableViewAutomaticDimension
 		tableView.estimatedRowHeight = 45
@@ -81,14 +81,13 @@ class PatientViewController: EDTableViewController {
 			case 0:
 				let cell = tableView.dequeueReusableCell(withIdentifier: "avatarCell", for: indexPath) as! ImageTableViewCell
 				if let url = patient?.photo.first?.url {
-					print("etf \(url)")
 					cell.imageView!.af_setImage(withURL: url)
 				}
 				return cell
 			case 1:
 				let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
 				cell.textLabel?.textAlignment = .center
-				cell.textLabel?.text = patient?.displayName
+				cell.textLabel?.text = patient?.string
 				return cell
 			case 2:
 				let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
@@ -106,6 +105,34 @@ class PatientViewController: EDTableViewController {
 				return cell
 
 			}
+		case 1:
+			let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
+			let contact = patient?.telecom[indexPath.row]
+			cell.textLabel?.textAlignment = .left
+			cell.textLabel?.text = contact?.string
+			return cell
+		case 2:
+			let cell = tableView.dequeueReusableCell(withIdentifier: "valueCell", for: indexPath)
+			let address = patient?.address[indexPath.row]
+			var tmp = ""
+			var el = [address?.postalCode, address?.text]
+			for line in address!.line {
+				el.append(line)
+			}
+			el.append(address?.city)
+			el.append(address?.state)
+			el.append(address?.country)
+			for item in el {
+				if let item = item {
+					if tmp.characters.count > 0 {
+						tmp = "\(tmp), "
+					}
+					tmp = tmp + item
+				}
+			}
+			cell.detailTextLabel?.text = "\(address!.type.rawValue) \(address!.use.rawValue)"
+			cell.textLabel?.text = tmp
+			return cell
 
 		default:
 			let cell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)

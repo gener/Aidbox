@@ -33,6 +33,28 @@ class Address: BaseObject {
 	var postalCode: String?
 	var country: String?
 	var period: Period?
+	
+	override var string: String? {
+		get {
+			var tmp = ""
+			var address = [postalCode, text]
+			for line in self.line {
+				address.append(line)
+			}
+			address.append(city)
+			address.append(state)
+			address.append(country)
+			for item in address {
+				if let item = item {
+					if tmp.characters.count > 0 {
+						tmp = "\(tmp), "
+					}
+					tmp = tmp + item
+				}
+			}
+			return "\(use.rawValue) \(type.rawValue): \(tmp)"
+		}
+	}
 
 	required init(from dict: [AnyHashable : Any]) {
 		self.use = .temp

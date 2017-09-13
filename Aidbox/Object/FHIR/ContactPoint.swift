@@ -34,6 +34,16 @@ class ContactPoint: BaseObject {
 	var rank : UInt?
 	var period : Period?
 	
+	override var string: String? {
+		get {
+			if let value = value {
+				return "\(system.rawValue) \(value)"
+			}
+			return nil
+			
+		}
+	}
+	
 
 	required init(from dict: [AnyHashable : Any]) {
 		self.system  = .other

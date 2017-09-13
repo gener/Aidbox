@@ -10,6 +10,8 @@ import UIKit
 import DateParser
 
 protocol BaseObjectProtocol {
+	
+	var string: String? { get }
 	init(from dict:[AnyHashable : Any])
 	func updateFrom(dict:[AnyHashable : Any])
 	func toDict()->[AnyHashable : Any]
@@ -29,5 +31,13 @@ open class BaseObject : BaseObjectProtocol {
 	func toDict() -> [AnyHashable : Any] {
 		return [:]
 	}
+	
+	var string: String? {
+		get {
+			return nil
+		}
+	}
+	
+
 
 }

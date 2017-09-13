@@ -79,8 +79,8 @@ class Patient: BaseObject {
 		}
 
 	}
-
-	var displayName: String {
+	
+	override var string: String? {
 		get {
 			if let humanName = name.filter({ (item) -> Bool in
 				return item.use == .official

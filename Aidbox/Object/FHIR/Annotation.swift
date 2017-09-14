@@ -8,7 +8,9 @@
 
 import UIKit
 
-class Annotation: BaseObject {
+class Annotation: Element {
+	var authorReference: Reference?
+	var authorString: String?
 	var time : Date?
 	var text : String?
 }

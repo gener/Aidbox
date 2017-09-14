@@ -8,18 +8,25 @@
 
 import UIKit
 
-class Dosage: BaseObject {
+class Dosage: Element {
 
 	var sequence: Int?
 	var text: String?
-	var additionalInstruction: CodeableConcept?
+	var additionalInstruction: [CodeableConcept] = []
 	var patientInstruction: String?
-//	var timing: Tinimg? 
+	var timing: Timing?
+	var asNeededBoolean: Bool?
+	var asNeededCodeableConcept: CodeableConcept?
 	var site: CodeableConcept?
 	var route: CodeableConcept?
 	var method: CodeableConcept?
+	var dosageRange: FRange?
+	var dosageQuantity: Quantity?
 	var maxDosePerPeriod: Ratio?
 	var maxDosePerAdministration: Quantity?
 	var maxDosePerLifetime: Quantity?
+	var rateRatio: Ratio?
+	var rateRange: FRange?
+	var rateQuantity: Quantity?
 
 }

@@ -43,32 +43,11 @@ class ViewController: EDViewController, UIWebViewDelegate {
 	}
 
 	func userDidLogout() {
-		homeController.dismiss(animated: true, completion: nil)
+
+
+		presentedViewController?.dismiss(animated: true, completion: { [unowned self] in
+			self.presentedViewController?.dismiss(animated: true, completion: nil)
+		})
 	}
-
-//	func getToken(by code: String) {
-//		let string = "\(UserManager.instance.clientAuthorizeURI)?client_id=\(UserManager.instance.clientId)&scope=\(UserManager.instance.clientScope)&redirect_uri=\(UserManager.instance.clientRedirectURI)&grant_type=authorization_code&client_secret=\(UserManager.instance.clientSecret)&code=\(code)"
-//		let request = URLRequest(url: URL(string: string)!)
-//		controller.webView.loadRequest(request)
-//	}
-//
-//	// MARK: - UIWebViewDelegate
-//
-//	func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-//		if let url = request.url {
-//			print("load URL \(url)")
-//			if url.absoluteString.contains(UserManager.instance.clientRedirectURI), let code = url.queryItems["code"] {
-//				print("URL = \(url.absoluteString)")
-//				print("items \(url.queryItems)")
-//				getToken(by: code)
-//				return false
-//			}
-//		}
-//		return true
-//
-//	}
-
-
-
 }
 

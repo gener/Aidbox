@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Coding: BaseObject {
+class Coding: Element {
 
 	var system: String?
 	var version: String?

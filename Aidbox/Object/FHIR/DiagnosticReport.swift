@@ -18,15 +18,22 @@ class DiagnosticReport: BaseObject {
 	}
 
 	var identifier : [Identifier] = []
+	var basedOn: Reference?
 	var status: DiagnosticReportStatus = .registered
 	var category: CodeableConcept?
 	var code : CodeableConcept?
-	var subject: Patient?
+	var subject: Reference?
+	var context: Reference?
 	var effectiveDateTime: Date?
 	var effectivePeriod: Period?
 	var issued: Date?
-	var performer: Organization?
-	var resultsInterpreter: Organization?
+	var performer: Reference?
+	var resultsInterpreter: Reference?
+	var specimen: Reference?
+	var result: Reference?
+	var imagingStudy: [Reference] = []
+	var image: [MediaReference] = []
+	var conclusion: String?
 	var codedDiagnosis : [CodeableConcept] = []
 	var presentedForm : [Attachment] = []
 	

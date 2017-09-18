@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Period: BaseObject {
+class Period: Element {
 	
 	var start : Date?
 	var end : Date?

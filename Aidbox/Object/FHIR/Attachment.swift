@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Attachment: BaseObject {
+class Attachment: Element {
 
 	var contentType: String?
 	var language: String?

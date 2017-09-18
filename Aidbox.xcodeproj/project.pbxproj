@@ -17,6 +17,20 @@
 		A113386F1F68FD24007EAA53 /* Dosage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A113386E1F68FD24007EAA53 /* Dosage.swift */; };
 		A11338711F68FDAB007EAA53 /* Ratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11338701F68FDAB007EAA53 /* Ratio.swift */; };
 		A11338731F6901A1007EAA53 /* DiagnosticReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11338721F6901A1007EAA53 /* DiagnosticReport.swift */; };
+		A11A79C51F6920A500420D8A /* MedicationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79C41F6920A500420D8A /* MedicationRequest.swift */; };
+		A11A79C71F69212800420D8A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79C61F69212800420D8A /* Resource.swift */; };
+		A11A79C91F69215600420D8A /* Meta.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79C81F69215600420D8A /* Meta.swift */; };
+		A11A79CB1F69240700420D8A /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79CA1F69240700420D8A /* Element.swift */; };
+		A11A79CD1F69247400420D8A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79CC1F69247400420D8A /* Extension.swift */; };
+		A11A79CF1F69257000420D8A /* FRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79CE1F69257000420D8A /* FRange.swift */; };
+		A11A79D11F6925E200420D8A /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79D01F6925E200420D8A /* Schedule.swift */; };
+		A11A79D31F69260600420D8A /* DomainResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79D21F69260600420D8A /* DomainResource.swift */; };
+		A11A79D51F69268C00420D8A /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79D41F69268C00420D8A /* Reference.swift */; };
+		A11A79D71F6927E900420D8A /* Narrative.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79D61F6927E900420D8A /* Narrative.swift */; };
+		A11A79D91F692A5800420D8A /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79D81F692A5800420D8A /* Media.swift */; };
+		A11A79DB1F692A7100420D8A /* MediaReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79DA1F692A7100420D8A /* MediaReference.swift */; };
+		A11A79DD1F693FD600420D8A /* MedicationRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79DC1F693FD600420D8A /* MedicationRequester.swift */; };
+		A11A79DF1F69416A00420D8A /* Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79DE1F69416A00420D8A /* Timing.swift */; };
 		A16330DA1F5FCE2000D4DD27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16330D91F5FCE2000D4DD27 /* AppDelegate.swift */; };
 		A16330DC1F5FCE2000D4DD27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16330DB1F5FCE2000D4DD27 /* ViewController.swift */; };
 		A16330DF1F5FCE2000D4DD27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16330DD1F5FCE2000D4DD27 /* Main.storyboard */; };
@@ -98,6 +112,20 @@
 		A113386E1F68FD24007EAA53 /* Dosage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dosage.swift; path = Object/FHIR/Dosage.swift; sourceTree = "<group>"; };
 		A11338701F68FDAB007EAA53 /* Ratio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ratio.swift; path = Object/FHIR/Ratio.swift; sourceTree = "<group>"; };
 		A11338721F6901A1007EAA53 /* DiagnosticReport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiagnosticReport.swift; path = Object/FHIR/DiagnosticReport.swift; sourceTree = "<group>"; };
+		A11A79C41F6920A500420D8A /* MedicationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedicationRequest.swift; path = Object/FHIR/MedicationRequest.swift; sourceTree = "<group>"; };
+		A11A79C61F69212800420D8A /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Object/FHIR/Resource.swift; sourceTree = "<group>"; };
+		A11A79C81F69215600420D8A /* Meta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Meta.swift; path = Object/FHIR/Meta.swift; sourceTree = "<group>"; };
+		A11A79CA1F69240700420D8A /* Element.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Element.swift; path = Object/FHIR/Element.swift; sourceTree = "<group>"; };
+		A11A79CC1F69247400420D8A /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extension.swift; path = Object/FHIR/Extension.swift; sourceTree = "<group>"; };
+		A11A79CE1F69257000420D8A /* FRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FRange.swift; path = Object/FHIR/FRange.swift; sourceTree = "<group>"; };
+		A11A79D01F6925E200420D8A /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = Object/FHIR/Schedule.swift; sourceTree = "<group>"; };
+		A11A79D21F69260600420D8A /* DomainResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DomainResource.swift; path = Object/FHIR/DomainResource.swift; sourceTree = "<group>"; };
+		A11A79D41F69268C00420D8A /* Reference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reference.swift; path = Object/FHIR/Reference.swift; sourceTree = "<group>"; };
+		A11A79D61F6927E900420D8A /* Narrative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Narrative.swift; path = Object/FHIR/Narrative.swift; sourceTree = "<group>"; };
+		A11A79D81F692A5800420D8A /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Media.swift; path = Object/FHIR/Media.swift; sourceTree = "<group>"; };
+		A11A79DA1F692A7100420D8A /* MediaReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaReference.swift; path = Object/FHIR/MediaReference.swift; sourceTree = "<group>"; };
+		A11A79DC1F693FD600420D8A /* MedicationRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedicationRequester.swift; path = Object/FHIR/MedicationRequester.swift; sourceTree = "<group>"; };
+		A11A79DE1F69416A00420D8A /* Timing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timing.swift; path = Object/FHIR/Timing.swift; sourceTree = "<group>"; };
 		A16330D61F5FCE2000D4DD27 /* Aidbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aidbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16330D91F5FCE2000D4DD27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16330DB1F5FCE2000D4DD27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -287,6 +315,20 @@
 				A113386E1F68FD24007EAA53 /* Dosage.swift */,
 				A11338701F68FDAB007EAA53 /* Ratio.swift */,
 				A11338721F6901A1007EAA53 /* DiagnosticReport.swift */,
+				A11A79C41F6920A500420D8A /* MedicationRequest.swift */,
+				A11A79C61F69212800420D8A /* Resource.swift */,
+				A11A79C81F69215600420D8A /* Meta.swift */,
+				A11A79CA1F69240700420D8A /* Element.swift */,
+				A11A79CC1F69247400420D8A /* Extension.swift */,
+				A11A79CE1F69257000420D8A /* FRange.swift */,
+				A11A79D01F6925E200420D8A /* Schedule.swift */,
+				A11A79D21F69260600420D8A /* DomainResource.swift */,
+				A11A79D41F69268C00420D8A /* Reference.swift */,
+				A11A79D61F6927E900420D8A /* Narrative.swift */,
+				A11A79D81F692A5800420D8A /* Media.swift */,
+				A11A79DA1F692A7100420D8A /* MediaReference.swift */,
+				A11A79DC1F693FD600420D8A /* MedicationRequester.swift */,
+				A11A79DE1F69416A00420D8A /* Timing.swift */,
 			);
 			name = FHIR;
 			sourceTree = "<group>";
@@ -428,10 +470,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A11A79DB1F692A7100420D8A /* MediaReference.swift in Sources */,
 				A1E079C71F62838C0045AA20 /* WebService.swift in Sources */,
 				A1E079B31F6162510045AA20 /* User.swift in Sources */,
 				A11338671F68F85A007EAA53 /* Organization.swift in Sources */,
 				A1E079E31F679E040045AA20 /* CodeableConcept.swift in Sources */,
+				A11A79DD1F693FD600420D8A /* MedicationRequester.swift in Sources */,
 				A1E079EE1F67DAB70045AA20 /* ImageTableViewCell.swift in Sources */,
 				A1E079C31F626F610045AA20 /* Token.swift in Sources */,
 				A113386F1F68FD24007EAA53 /* Dosage.swift in Sources */,
@@ -442,9 +486,15 @@
 				A1E079DD1F66BE4A0045AA20 /* HumanName.swift in Sources */,
 				A1E079EA1F67D8200045AA20 /* PatientViewController.swift in Sources */,
 				A1E079DF1F66BFA60045AA20 /* ContactPoint.swift in Sources */,
+				A11A79CF1F69257000420D8A /* FRange.swift in Sources */,
 				A1E079C91F664B9A0045AA20 /* Group.swift in Sources */,
 				A1E079AD1F6157A80045AA20 /* UserManager.swift in Sources */,
+				A11A79DF1F69416A00420D8A /* Timing.swift in Sources */,
+				A11A79D31F69260600420D8A /* DomainResource.swift in Sources */,
+				A11A79D11F6925E200420D8A /* Schedule.swift in Sources */,
+				A11A79D91F692A5800420D8A /* Media.swift in Sources */,
 				A1E079D91F6686600045AA20 /* Address.swift in Sources */,
+				A11A79C71F69212800420D8A /* Resource.swift in Sources */,
 				A16330DC1F5FCE2000D4DD27 /* ViewController.swift in Sources */,
 				A11338731F6901A1007EAA53 /* DiagnosticReport.swift in Sources */,
 				A11338691F68FB3C007EAA53 /* Quantity.swift in Sources */,
@@ -453,10 +503,16 @@
 				A1E079D41F6663B70045AA20 /* MenuViewController.swift in Sources */,
 				A1E079DB1F66874F0045AA20 /* Period.swift in Sources */,
 				A1E079D21F6661BD0045AA20 /* HomeViewController.swift in Sources */,
+				A11A79C91F69215600420D8A /* Meta.swift in Sources */,
+				A11A79D51F69268C00420D8A /* Reference.swift in Sources */,
+				A11A79C51F6920A500420D8A /* MedicationRequest.swift in Sources */,
+				A11A79CB1F69240700420D8A /* Element.swift in Sources */,
 				A1E079C51F627FE70045AA20 /* BaseObject.swift in Sources */,
+				A11A79CD1F69247400420D8A /* Extension.swift in Sources */,
 				A1E079BE1F6258800045AA20 /* URLEndpoint.swift in Sources */,
 				A11338631F68F700007EAA53 /* Identifier.swift in Sources */,
 				A113386D1F68FCB4007EAA53 /* Annotation.swift in Sources */,
+				A11A79D71F6927E900420D8A /* Narrative.swift in Sources */,
 				A16330DA1F5FCE2000D4DD27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

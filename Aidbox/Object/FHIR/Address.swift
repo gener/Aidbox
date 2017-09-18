@@ -23,8 +23,8 @@ class Address: BaseObject {
 		case both = "both"
 	}
 
-	var use: AddressUse
-	var type: AddressType
+	var use: AddressUse = .temp
+	var type: AddressType = .postal
 	var text: String?
 	var line: [String] = []
 	var city: String?
@@ -56,51 +56,51 @@ class Address: BaseObject {
 		}
 	}
 
-	required init(from dict: [AnyHashable : Any]) {
-		self.use = .temp
-		if let rawUse = dict["use"] as? String, let use = AddressUse(rawValue: rawUse) {
-			self.use = use
-		}
-
-		self.type = .postal
-		if let rawType = dict["type"] as? String, let type = AddressType(rawValue: rawType) {
-			self.type = type
-		}
-
-		if let text = dict["text"] as? String {
-			self.text = text
-		}
-
-		if let lines = dict["line"] as? [String] {
-			for line in lines  {
-				self.line.append(line)
-			}
-		}
-
-		if let city = dict["city"] as? String {
-			self.city = city
-		}
-
-		if let district = dict["district"] as? String {
-			self.district = district
-		}
-
-		if let state = dict["state"] as? String {
-			self.state = state
-		}
-
-		if let postalCode = dict["postalCode"] as? String {
-			self.postalCode = postalCode
-		}
-
-		if let country = dict["country"] as? String {
-			self.country = country
-		}
-
-		if let periodDict = dict["period"] as? [AnyHashable : Any] {
-			self.period = Period(from: periodDict)
-		}
-
-		super.init(from: dict)
-	}
+//	required init(from dict: [AnyHashable : Any]) {
+//		self.use = .temp
+//		if let rawUse = dict["use"] as? String, let use = AddressUse(rawValue: rawUse) {
+//			self.use = use
+//		}
+//
+//		self.type = .postal
+//		if let rawType = dict["type"] as? String, let type = AddressType(rawValue: rawType) {
+//			self.type = type
+//		}
+//
+//		if let text = dict["text"] as? String {
+//			self.text = text
+//		}
+//
+//		if let lines = dict["line"] as? [String] {
+//			for line in lines  {
+//				self.line.append(line)
+//			}
+//		}
+//
+//		if let city = dict["city"] as? String {
+//			self.city = city
+//		}
+//
+//		if let district = dict["district"] as? String {
+//			self.district = district
+//		}
+//
+//		if let state = dict["state"] as? String {
+//			self.state = state
+//		}
+//
+//		if let postalCode = dict["postalCode"] as? String {
+//			self.postalCode = postalCode
+//		}
+//
+//		if let country = dict["country"] as? String {
+//			self.country = country
+//		}
+//
+//		if let periodDict = dict["period"] as? [AnyHashable : Any] {
+//			self.period = Period(from: periodDict)
+//		}
+//
+//		super.init(from: dict)
+//	}
 }

@@ -31,6 +31,8 @@
 		A11A79DB1F692A7100420D8A /* MediaReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79DA1F692A7100420D8A /* MediaReference.swift */; };
 		A11A79DD1F693FD600420D8A /* MedicationRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79DC1F693FD600420D8A /* MedicationRequester.swift */; };
 		A11A79DF1F69416A00420D8A /* Timing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11A79DE1F69416A00420D8A /* Timing.swift */; };
+		A11F3CF31F6FC9FE00EE76A3 /* EVReflection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11F3CF21F6FC9FE00EE76A3 /* EVReflection.framework */; };
+		A11F3CF41F6FC9FE00EE76A3 /* EVReflection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A11F3CF21F6FC9FE00EE76A3 /* EVReflection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A16330DA1F5FCE2000D4DD27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16330D91F5FCE2000D4DD27 /* AppDelegate.swift */; };
 		A16330DC1F5FCE2000D4DD27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16330DB1F5FCE2000D4DD27 /* ViewController.swift */; };
 		A16330DF1F5FCE2000D4DD27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16330DD1F5FCE2000D4DD27 /* Main.storyboard */; };
@@ -89,6 +91,7 @@
 				A1E079E81F67D6220045AA20 /* AlamofireImage.framework in Embed Frameworks */,
 				A1E079921F613E590045AA20 /* EDLocalizator.framework in Embed Frameworks */,
 				A1E079B81F616CDA0045AA20 /* Alamofire.framework in Embed Frameworks */,
+				A11F3CF41F6FC9FE00EE76A3 /* EVReflection.framework in Embed Frameworks */,
 				A1E079941F613E590045AA20 /* EDProgressView.framework in Embed Frameworks */,
 				A113385F1F67E75A007EAA53 /* EDDateHelper.framework in Embed Frameworks */,
 				A1E079CD1F6657070045AA20 /* DateParser.framework in Embed Frameworks */,
@@ -126,6 +129,7 @@
 		A11A79DA1F692A7100420D8A /* MediaReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MediaReference.swift; path = Object/FHIR/MediaReference.swift; sourceTree = "<group>"; };
 		A11A79DC1F693FD600420D8A /* MedicationRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MedicationRequester.swift; path = Object/FHIR/MedicationRequester.swift; sourceTree = "<group>"; };
 		A11A79DE1F69416A00420D8A /* Timing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Timing.swift; path = Object/FHIR/Timing.swift; sourceTree = "<group>"; };
+		A11F3CF21F6FC9FE00EE76A3 /* EVReflection.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EVReflection.framework; path = Carthage/Build/iOS/EVReflection.framework; sourceTree = "<group>"; };
 		A16330D61F5FCE2000D4DD27 /* Aidbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aidbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A16330D91F5FCE2000D4DD27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A16330DB1F5FCE2000D4DD27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				A1E079E71F67D6220045AA20 /* AlamofireImage.framework in Frameworks */,
 				A1E0798D1F613E590045AA20 /* EDAlertController.framework in Frameworks */,
 				A1E079B71F616CDA0045AA20 /* Alamofire.framework in Frameworks */,
+				A11F3CF31F6FC9FE00EE76A3 /* EVReflection.framework in Frameworks */,
 				A1E0798F1F613E590045AA20 /* EDControllers.framework in Frameworks */,
 				A113385E1F67E75A007EAA53 /* EDDateHelper.framework in Frameworks */,
 				A1E079CC1F6657070045AA20 /* DateParser.framework in Frameworks */,
@@ -210,6 +215,7 @@
 		A16330CD1F5FCE2000D4DD27 = {
 			isa = PBXGroup;
 			children = (
+				A11F3CF21F6FC9FE00EE76A3 /* EVReflection.framework */,
 				A16330D81F5FCE2000D4DD27 /* Aidbox */,
 				A1E079CA1F6657070045AA20 /* DateParser.framework */,
 				A1E079CB1F6657070045AA20 /* SideMenu.framework */,
@@ -445,6 +451,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/DateParser.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/EDDateHelper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/EVReflection.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MBProgressHUD.framework",
@@ -458,6 +465,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/DateParser.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AlamofireImage.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/EDDateHelper.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/EVReflection.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -20,7 +20,7 @@ class HumanName: BaseObject {
 		case maiden = "maiden"
 	}
 
-	var use: NameUse
+	var use: NameUse = .temp
 	var text : String?
 	var family : [String] = []
 	var given : [String] = []
@@ -42,37 +42,37 @@ class HumanName: BaseObject {
 		}
 	}
 
-	required init(from dict: [AnyHashable : Any]) {
-		self.use = .temp
-		if let rawUse = dict["use"] as? String, let use = NameUse(rawValue: rawUse) {
-			self.use = use
-		}
-
-		if let text = dict["text"] as? String {
-			self.text = text
-		}
-
-		if let family = dict["family"] as? [String] {
-			self.family = family
-		}
-
-		if let given = dict["given"] as? [String] {
-			self.given = given
-		}
-
-		if let prefix = dict["prefix"] as? String {
-			self.prefix = prefix
-		}
-
-		if let suffix = dict["suffix"] as? String {
-			self.suffix = suffix
-		}
-
-		if let periodDict = dict["period"] as? [AnyHashable : Any] {
-			self.period = Period(from: periodDict)
-		}
-		super.init(from: dict)
-	}
+//	required init(from dict: [AnyHashable : Any]) {
+//		self.use = .temp
+//		if let rawUse = dict["use"] as? String, let use = NameUse(rawValue: rawUse) {
+//			self.use = use
+//		}
+//
+//		if let text = dict["text"] as? String {
+//			self.text = text
+//		}
+//
+//		if let family = dict["family"] as? [String] {
+//			self.family = family
+//		}
+//
+//		if let given = dict["given"] as? [String] {
+//			self.given = given
+//		}
+//
+//		if let prefix = dict["prefix"] as? String {
+//			self.prefix = prefix
+//		}
+//
+//		if let suffix = dict["suffix"] as? String {
+//			self.suffix = suffix
+//		}
+//
+//		if let periodDict = dict["period"] as? [AnyHashable : Any] {
+//			self.period = Period(from: periodDict)
+//		}
+//		super.init(from: dict)
+//	}
 
 
 }

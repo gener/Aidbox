@@ -11,22 +11,22 @@ import UIKit
 class Token: BaseObject {
 	var accessToken: String = ""
 	var refreshToken: String = ""
-	var expireAt: Date = Date()
+	var expiresAt: Date = Date()
 
-	override func updateFrom(dict: [AnyHashable : Any]) {
-		if let accessToken = dict["access_token"] as? String {
-			self.accessToken = accessToken
-		}
-		if let refreshToken = dict["refresh_token"] as? String {
-			self.refreshToken = refreshToken
-		}
-		if let rawDate = dict["expires_at"] as? String {
-			do {
-				expireAt = try Date(dateString: rawDate)
-			}
-			catch {}
-		}
-	}
+//	override func updateFrom(dict: [AnyHashable : Any]) {
+//		if let accessToken = dict["access_token"] as? String {
+//			self.accessToken = accessToken
+//		}
+//		if let refreshToken = dict["refresh_token"] as? String {
+//			self.refreshToken = refreshToken
+//		}
+//		if let rawDate = dict["expires_at"] as? String {
+//			do {
+//				expireAt = try Date(dateString: rawDate)
+//			}
+//			catch {}
+//		}
+//	}
 
 
 	

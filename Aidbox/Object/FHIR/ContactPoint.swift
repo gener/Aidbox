@@ -28,9 +28,9 @@ class ContactPoint: BaseObject {
 		case mobile = "mobile"
 	}
 
-	var system : ContactPointSystem
+	var system : ContactPointSystem = .other
 	var value: String?
-	var use: ContactPointUse
+	var use: ContactPointUse = .temp
 	var rank : UInt?
 	var period : Period?
 	
@@ -45,26 +45,26 @@ class ContactPoint: BaseObject {
 	}
 	
 
-	required init(from dict: [AnyHashable : Any]) {
-		self.system  = .other
-		if let rawSystem = dict["system"] as? String, let system = ContactPointSystem(rawValue: rawSystem) {
-			self.system = system
-		}
-		if let value = dict["value"] as? String {
-			self.value = value
-		}
-
-		use = .temp
-		if let rawUse = dict["use"] as? String, let use = ContactPointUse(rawValue: rawUse) {
-			self.use = use
-		}
-		if let rank = dict["rank"] as? UInt {
-			self.rank = rank
-		}
-		if let periodDict = dict["period"] as? [AnyHashable : Any] {
-			self.period = Period(from: periodDict)
-		}
-
-		super.init(from: dict)
-	}
+//	required init(from dict: [AnyHashable : Any]) {
+//		self.system  = .other
+//		if let rawSystem = dict["system"] as? String, let system = ContactPointSystem(rawValue: rawSystem) {
+//			self.system = system
+//		}
+//		if let value = dict["value"] as? String {
+//			self.value = value
+//		}
+//
+//		use = .temp
+//		if let rawUse = dict["use"] as? String, let use = ContactPointUse(rawValue: rawUse) {
+//			self.use = use
+//		}
+//		if let rank = dict["rank"] as? UInt {
+//			self.rank = rank
+//		}
+//		if let periodDict = dict["period"] as? [AnyHashable : Any] {
+//			self.period = Period(from: periodDict)
+//		}
+//
+//		super.init(from: dict)
+//	}
 }

@@ -22,8 +22,8 @@ class UserManager {
 	private let clientGrantType = "authorization_code"
 
 
-	var user = User(from: [:])
-	var token = Token(from: [:])
+	var user = User()
+	var token = Token()
 
 	var isLoggedIn : Bool {
 		get {
@@ -70,8 +70,8 @@ class UserManager {
 	}
 
 	func logout() {
-		user = User(from: [:])
-		token = Token(from: [:])
+		user = User()
+		token = Token()
 		WebService.instance.setToken(accessToken: nil)
 		NotificationCenter.default.post(Notification(name: Notification.Name(rawValue: "userDidLogout")))
 	}
@@ -89,7 +89,7 @@ class UserManager {
 				result(error, nil)
 			}
 			if let dict = response.result.value as? [AnyHashable : Any] {
-				self.token = Token(from: dict)
+				self.token = Token(dictionary: dict as NSDictionary)
 				WebService.instance.setToken(accessToken: self.token.accessToken)
 				self.requestUserInfo(result: result)
 			}
@@ -107,7 +107,7 @@ class UserManager {
 				result(error, nil)
 			}
 			if let dict = response.result.value as? [AnyHashable : Any] {
-				self.user = User(from: dict)
+				self.user = User(dictionary: dict as NSDictionary)
 				self.requestPatient(self.user.patientId, result: result)
 			}
 			else {
@@ -123,7 +123,7 @@ class UserManager {
 				result(error, nil)
 			}
 			if let dict = response.result.value as? [AnyHashable : Any] {
-				self.user.patient = Patient(from: dict)
+				self.user.patient = Patient(dictionary: dict as NSDictionary)
 				result(response.error, self.user)
 			}
 			else {

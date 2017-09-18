@@ -12,3 +12,4 @@ github "SyncDB/DateParser"
 
 github "jonkykong/SideMenu" "master"
 
+github "evermeer/EVReflection" "Swift3.2"

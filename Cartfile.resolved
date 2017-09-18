@@ -1,6 +1,7 @@
 github "Alamofire/Alamofire" "4.5.1"
 github "Alamofire/AlamofireImage" "3.3.0"
 github "SyncDB/DateParser" "1.1.0"
+github "evermeer/EVReflection" "7e90563caa0ccca79afe8324e44ebde3e8a78b30"
 github "hackiftekhar/IQKeyboardManager" "v4.0.13"
 github "jdg/MBProgressHUD" "1.0.0"
 github "jonkykong/SideMenu" "6b9607fc9a3d95f43d2e38b8563c79c3bb839041"

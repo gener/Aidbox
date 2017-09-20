@@ -23,14 +23,14 @@ class DiagnosticReport: BaseObject {
 	var category: CodeableConcept?
 	var code : CodeableConcept?
 	var subject: Reference?
-	var context: Reference?
+	var encounter: Reference?
 	var effectiveDateTime: Date?
 	var effectivePeriod: Period?
 	var issued: Date?
 	var performer: Reference?
-	var resultsInterpreter: Reference?
-	var specimen: Reference?
-	var result: Reference?
+	var request: [Reference] = []
+	var specimen: [Reference] = []
+	var result: [Reference] = []
 	var imagingStudy: [Reference] = []
 	var image: [MediaReference] = []
 	var conclusion: String?

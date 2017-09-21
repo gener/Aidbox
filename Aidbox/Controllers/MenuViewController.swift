@@ -25,7 +25,6 @@ class MenuViewController: UITableViewController {
 
 		tableView.tableFooterView = UIView()
 
-//		print("patient \(UserManager.instance.user.patient.displayName)")
 
     }
 

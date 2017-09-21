@@ -19,9 +19,25 @@ class Identifier: BaseObject {
 
 	var use : IdentifierUse = .temp
 	var type: CodeableConcept?
-	var system: URL?
+	var system: String?
 	var value: String?
 	var period: Period?
-	var assigner : Organization? 
+	var assigner : Organization?
+
+	override func propertyConverters() -> [(key: String, decodeConverter: ((Any?) -> ()), encodeConverter: (() -> Any?))] {
+		return [
+			( // We want a custom converter for the field partientId
+				key: "use",
+				decodeConverter: {
+					if let val = $0 as? String, let use = IdentifierUse(rawValue:val) {
+						self.use = use
+					}
+			},
+				encodeConverter: {
+					return self.use.rawValue
+
+			})
+		]
+	}
 
 }

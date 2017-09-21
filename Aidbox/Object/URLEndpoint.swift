@@ -29,9 +29,17 @@ struct Endpoint {
 	static let oauthToken = URLEndpoint("oauth/token")
 	static let currentUser = URLEndpoint("user")
 
+	static var diagnosticReports : URLEndpoint {
+		get {
+			return URLEndpoint("fhir/DiagnosticReport?subject=\(UserManager.instance.user.patientId)")
+		}
+	}
+
 	static func patient(id: String) -> URLEndpoint {
 		return URLEndpoint("fhir/Patient/\(id)")
 	}
+
+
 
 }
 

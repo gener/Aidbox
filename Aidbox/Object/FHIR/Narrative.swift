@@ -18,5 +18,20 @@ class Narrative: Element {
 	}
 	
 	var status: NarrativeStatus = .empty
-	var div : String? 
+	var div : String?
+
+	override func propertyConverters() -> [(key: String, decodeConverter: ((Any?) -> ()), encodeConverter: (() -> Any?))] {
+		return [
+			( // We want a custom converter for the field partientId
+				key: "status",
+				decodeConverter: {
+					if let val = $0 as? String, let status = NarrativeStatus(rawValue:val) {
+						self.status = status
+					}
+			},
+				encodeConverter: {
+					return self.status.rawValue
+			})
+		]
+	}
 }
